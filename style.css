@@ -33,7 +33,7 @@ body, html {
   
   }
   
-  .bg ul li {
+  .menuStatic li {
     font-size: 50px;
     padding: 10px; 
     font-family: 'Allura', sans-serif;
@@ -42,7 +42,7 @@ body, html {
 
   }
 
-  .bg ul li:active {
+  .menuStatic li:active {
     color: black;
   }
 
@@ -172,7 +172,7 @@ body, html {
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    
+    font-family: 'Allura', sans-serif;
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -183,6 +183,7 @@ body, html {
     
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
+
   
   .menu li
   {
