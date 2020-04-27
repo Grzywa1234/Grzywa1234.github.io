@@ -125,7 +125,7 @@ header > h1 {
     color: #44bd32;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1100px){
     .choice {
         display: flex;
         margin: 20px auto;
