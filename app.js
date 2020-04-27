@@ -7,6 +7,8 @@ const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const choices = document.querySelector(".choices");
+const action = document.getElementById("action-message");
 
 function getComputerChoice() {
     const choices = ['r', 'p', 's'];
@@ -40,6 +42,8 @@ function win(userChoice, computerChoice) {
         result_div.innerHTML = `You WON! Refresh page.`;
         userScore_span.innerHTML = `-`;
         computerScore_span.innerHTML = `-`;
+        choices.style.display = 'none';
+        action.innerHTML = ":)";
     }
 }
 
@@ -55,6 +59,8 @@ function lose(userChoice, computerChoice) {
         result_div.innerHTML = `You LOST! Refresh page.`;
         userScore_span.innerHTML = `-`;
         computerScore_span.innerHTML = `-`;
+        choices.style.display = 'none';
+        action.innerHTML = ":)";
     }
 }
 
