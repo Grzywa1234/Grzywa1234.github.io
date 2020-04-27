@@ -40,8 +40,6 @@ function win(userChoice, computerChoice) {
     setTimeout(() => scoreBoard_div.classList.remove('green-glow'), 400);
     if (userScore >= 5) {
         result_div.innerHTML = `You WON! Refresh page.`;
-        userScore_span.innerHTML = `-`;
-        computerScore_span.innerHTML = `-`;
         choices.style.display = 'none';
         action.innerHTML = ":)";
     }
@@ -57,8 +55,6 @@ function lose(userChoice, computerChoice) {
     setTimeout(() => scoreBoard_div.classList.remove('red-glow'), 400);
     if (computerScore >= 5) {
         result_div.innerHTML = `You LOST! Refresh page.`;
-        userScore_span.innerHTML = `-`;
-        computerScore_span.innerHTML = `-`;
         choices.style.display = 'none';
         action.innerHTML = ":)";
     }
