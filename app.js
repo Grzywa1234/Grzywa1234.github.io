@@ -34,8 +34,8 @@ function win(userChoice, computerChoice) {
     result_div.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You WIN!`
     document.getElementById(userChoice).classList.add('green-glow');
     setTimeout(() => document.getElementById(userChoice).classList.remove('green-glow'), 400)
-    result_div.classList.add('green');
-    setTimeout(() => result_div.classList.remove('green'), 400);
+    scoreBoard_div.classList.add('green-glow');
+    setTimeout(() => scoreBoard_div.classList.remove('green-glow'), 400);
 }
 
 function lose(userChoice, computerChoice) {
@@ -44,12 +44,16 @@ function lose(userChoice, computerChoice) {
     result_div.innerHTML = `${convertToWord(computerChoice)} beats ${convertToWord(userChoice)}. You LOSE!`
     document.getElementById(userChoice).classList.add('red-glow');
     setTimeout(() => document.getElementById(userChoice).classList.remove('red-glow'), 400)
+    scoreBoard_div.classList.add('red-glow');
+    setTimeout(() => scoreBoard_div.classList.remove('red-glow'), 400);
 }
 
 function draw(userChoice, computerChoice) {
     result_div.innerHTML = `${convertToWord(computerChoice)} equals ${convertToWord(userChoice)}. DRAW!`;
     document.getElementById(userChoice).classList.add('grey-glow');
     setTimeout(() => document.getElementById(userChoice).classList.remove('grey-glow'), 400)
+    scoreBoard_div.classList.add('grey-glow');
+    setTimeout(() => scoreBoard_div.classList.remove('grey-glow'), 400);
 }
 
 function game(userChoice) {
