@@ -36,6 +36,11 @@ function win(userChoice, computerChoice) {
     setTimeout(() => document.getElementById(userChoice).classList.remove('green-glow'), 400)
     scoreBoard_div.classList.add('green-glow');
     setTimeout(() => scoreBoard_div.classList.remove('green-glow'), 400);
+    if (userScore >= 5) {
+        result_div.innerHTML = `You WON! Refresh page.`;
+        userScore_span.innerHTML = `-`;
+        computerScore_span.innerHTML = `-`;
+    }
 }
 
 function lose(userChoice, computerChoice) {
@@ -46,6 +51,11 @@ function lose(userChoice, computerChoice) {
     setTimeout(() => document.getElementById(userChoice).classList.remove('red-glow'), 400)
     scoreBoard_div.classList.add('red-glow');
     setTimeout(() => scoreBoard_div.classList.remove('red-glow'), 400);
+    if (computerScore >= 5) {
+        result_div.innerHTML = `You LOST! Refresh page.`;
+        userScore_span.innerHTML = `-`;
+        computerScore_span.innerHTML = `-`;
+    }
 }
 
 function draw(userChoice, computerChoice) {
