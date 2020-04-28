@@ -129,10 +129,7 @@ header > h1 {
 }
 
 header > h1 {
-    color: #24272e;
-    text-align: center;
-    font-family: 'Asap', sans-serif;
-    font-size: 20px;
+    display: none;
 }
 
 .choices {
