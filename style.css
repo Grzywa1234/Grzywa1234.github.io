@@ -19,14 +19,15 @@ header > h1 {
     color: #24272e;
     text-align: center;
     font-family: 'Asap', sans-serif;
+    font-size: 80px;
 }
 
 .score-board {
-    border: 3px solid white;
-    max-width: 200px;
-    margin: 20px auto;
+    border: 10px solid white;
+    max-width: 500px;
+    margin: 30px auto;
     color: white;
-    font-size: 40px;
+    font-size: 200px;
     border-radius: 5px;
     text-align: center;
     padding: 15px 20px;
@@ -37,26 +38,26 @@ header > h1 {
 .badge {
     background: red;
     color: white;
-    font-size: 14px;
+    font-size: 60px;
     padding: 2px 10px;
     font-family: 'Asap', sans-serif;
-    width: 70px;
+    width: 200px;
 }
 
 #user-label {
     position: absolute;
-    top: 30px;
-    left: -25px;
+    top: 90px;
+    left: -150px;
 }
 
 #computer-label {
     position: absolute;
-    top: 30px;
-    right: -25px;
+    top: 90px;
+    right: -150px;
 }
 
 .result {
-    font-size: 40px;
+    font-size: 50px;
     color: white;
 
 }
@@ -65,6 +66,7 @@ header > h1 {
     text-align: center;
     font-family: 'Asap', sans-serif;
     font-weight: bold;
+    font-size: 60px;
 }
 
 .choices {
@@ -75,14 +77,15 @@ header > h1 {
 }
 
 .choice {
-    display: inline-block;
-    margin: 20px 50px;
-    border: solid white;
-    width: 150px;
-    height: 150px;
+    display: flex;
+    margin: 40px auto;
+    border: solid 10px white;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    padding: 20px;
-    transition: all 0.3s ease;
+    padding: 60px;
+    transition: 0.3s ease;
+
 }
 
 .choice:hover{
@@ -91,7 +94,7 @@ header > h1 {
 }
 
 .choice > i {
-    font-size: 100px;
+    font-size: 150px;
     color: white;
 }
 
@@ -100,35 +103,44 @@ header > h1 {
     color: white;
     font-family: 'Asap', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .green-glow {
-    border: 3px solid #4cd137;
-    box-shadow: 0 0 10px #44bd32;
+    border: solid 10px #4cd137;
+    box-shadow: 0 0 40px #44bd32;
     background-color: #4cd137 !important;
 }
 
 .red-glow {
-    border: 3px solid #e74c3c;
-    box-shadow: 0 0 10px #c0392b;
+    border: solid 10px #e74c3c;
+    box-shadow: 0 0 40px #c0392b;
     background-color: #e74c3c !important;
 }
 
 .grey-glow {
-    border: 3px solid #95a5a6;
-    box-shadow: 0 0 10px #7f8c8d;
+    border: solid 10px #95a5a6;
+    box-shadow: 0 0 40px #7f8c8d;
     background-color: #95a5a6 !important;
 }
 
-@media (max-width: 1100px){
-    .choice {
-        display: flex;
-        margin: 20px auto;
-    }
+@media (min-height: 750px) {
 
-    .result {
-        font-size: 30px;
-    }
-    
+.choice {
+    margin: 70px auto;
+    border: solid 10px white;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    padding: 90px;
+    transition: 0.3s ease;
+
 }
+
+.choice > i {
+    font-size: 200px;
+    color: white;
+}
+
+}
+
