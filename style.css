@@ -186,3 +186,56 @@ header > h1 {
 }
 }
 
+@media (min-width: 700px) and (orientation: portrait) {
+    header > h1 {
+    font-size: 60px;
+}
+.result > p {
+    font-size: 40px;
+}
+
+.choices {
+    margin: 60px 0;
+    
+}
+
+.choice {
+    margin: 70px auto;
+
+}
+
+}
+
+@media (orientation: landscape) and (min-width: 1000px) {
+
+header {
+    padding: 20px;
+
+}
+
+header > h1 {
+    font-size: 50px;
+}
+
+
+    .choices {
+    margin: 30px 0;
+    
+}
+
+.choice {
+    display: inline-flex;
+    margin: 50px;
+    border-radius: 50%;
+
+}
+
+.score-board {
+    margin: 30px auto;
+}
+
+.result > p {
+    font-size: 40px;
+}
+}
+
