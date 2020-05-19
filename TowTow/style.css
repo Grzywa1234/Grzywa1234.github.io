@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+  } 
+
+body::-webkit-scrollbar-track {
+    background-color: #FFD829;
+    border: none;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 50%;
+    background-color: #FF395A;
+  }
+
+.header{
+    height: 100px;
+    background: #FFD829;
+    border-radius: 0 0 40px 40px;
+    border: 5px solid #FF395A;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+    font-weight: 700;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+.logo{
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+}
+
+
+.fa-facebook{
+    color: #FF395A;
+    font-size: 55px;
+    position: relative;
+    top: 32%;
+    left: -35px;
+    
+}
+
+.menu{
+    float: right;
+    line-height: 100px;
+    
+}
+
+
+
+.menu a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: .4s;
+    border:  dotted 2px #FFD829;
+    transition: .5s;
+}
+
+.menu a:hover{
+    color: #FF395A;
+    border:  dotted 2px #FF395A;
+}
+
+.show-menu-btn, .hide-menu-btn{
+    transition: .4s;
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn{
+    float: right;
+}
+
+.show-menu-btn i{
+    line-height: 70px;
+}
+
+.show-menu-btn:hover, .hide-menu-btn:hover{
+    color: #FF395A;
+    
+}
+
+.fa-facebook:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFD829;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  
+    
+}
+
+.towlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    bottom: -40px;
+    right: -40px;
+    
+}
+
+.towcar{
+    
+}
+
+.firsttow{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180px;
+    position: relative;
+    top: -250px;
+    left: -65px;
+    transition: .5s;
+    animation: towtow 3s infinite;
+}
+
+.secondtow{
+    font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180px;
+    position: relative;
+    color: #FF395A;
+    left: -280px;
+    top: -85px;
+    animation: towtow 3s 1.5s infinite;
+}
+
+.towtxt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+
+
+
+.towtxt p{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: .5s;
+    position: relative;
+    
+}
+
+.p2{
+    font-size: 60px;
+}
+
+.towpink{
+    text-decoration: none;
+    color: #FF395A;
+    font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hookimg{
+    opacity: 0.3;
+    position: absolute;
+    top: 40%;
+    height: 300px;
+}
+
+.hooks{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.hook{
+    position: absolute;
+    bottom: -100px;
+    z-index: 1111;
+    opacity: 0.5;
+    animation: flying 10s infinite ease-in;
+    
+}
+
+
+.hook:nth-child(1){
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s
+  }
+  
+  .hook:nth-child(2){
+    width: 80px;
+    height: 80px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  
+  .hook:nth-child(3){
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+  }
+  
+  .hook:nth-child(4){
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+  }
+  
+  .hook:nth-child(5){
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  
+  .hook:nth-child(6){
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+  }
+  
+  .hook:nth-child(7){
+    width: 25px;
+    height: 25px;
+    left: 75%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+  }
+  
+  .hook:nth-child(8){
+    width: 80px;
+    height: 80px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  
+  .hook:nth-child(9){
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    animation-duration: 9s;
+    animation-delay: 0s;
+  }
+  
+  .hook:nth-child(10){
+    width: 50px;
+    height: 50px;
+    left: 85%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+
+
+
+
+
+
+  .servicesection{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 100vh;
+  }
+
+  .servicesection img{
+      max-width: 100%;
+      max-height: 200px;
+      transition: .5s;   
+      animation: serviceimg 4s infinite; 
+  }
+
+  .serviceicon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 250px;
+  }
+
+  
+
+  .servicebox{
+      max-width: 30vw;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 100px auto;
+
+      
+  }
+
+  .servicetxt{
+    text-align: center;
+    font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    min-height: 250px;
+}
+
+.lastcontainer{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFD829;
+}
+
+.redtow{
+    width: 65%;
+    overflow: hidden;
+    
+}
+
+.towbig{
+    width: 100%;
+    height: 100%;
+}
+
+.joinus{
+    width: 35%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fb{
+    max-height: 250px;
+}
+
+.jointxt{
+    margin: 10px auto;
+    text-align: center;
+    font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    
+}
+
+.jointxttwo{
+    margin: 10px auto;
+    text-align: center;
+    font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.pinktruck{
+    max-height: 50px;
+}
+
+
+
+
+@keyframes serviceimg{
+    25%{
+     transform: scale(1); 
+    }
+    50%{
+     transform: scale(1.2); 
+    }
+    75%{
+     transform: scale(1); 
+    }
+    100%{
+     transform: scale(1); 
+    }
+  }
+  
+
+
+@keyframes towtow{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes flying{
+    0{
+      bottom: -100px;
+      transform: translateX(100px);
+    }
+    50%{
+      transform: translateX(100px);
+    }
+    100%{
+      bottom: 1080px;
+      transform: translateX(-200px)
+    }
+    
+  }
+
+
+
+@media screen and (max-width: 800px){
+    .header{
+        height: 80px;
+    }
+
+    .show-menu-btn, .hide-menu-btn{
+        display: block;
+        transition: 1s;
+    }
+
+    .show-menu-btn:hover{
+        transform: rotate(360deg);
+    }
+
+    .fa-facebook{
+        display: none;
+    }
+
+
+    .hide-menu-btn{
+        color: #FFD829;
+    }
+
+    .show-menu-btn{
+        margin-right: 30px;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #7f8c8d;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding: 0;
+        line-height: normal;
+        transition: 1s;
+        z-index: 1111;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+        color: #FFD829;
+        border: solid 2px #FFD829;
+        margin: 40px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .hooks{
+        
+    }
+
+    .hookimg{
+        display: none;
+    }
+
+    #chk:checked ~ .menu{
+        left: 0;
+    }
+}
