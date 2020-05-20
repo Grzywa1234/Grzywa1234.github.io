@@ -336,7 +336,7 @@ body::-webkit-scrollbar-thumb {
   .servicetxt{
     text-align: center;
     font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     min-height: 250px;
 }
 
@@ -368,8 +368,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fblink{
+    display: flex;
     max-height: 250px;
     max-width: 70%;
+    align-items: center;
 }
 
 .fb{
