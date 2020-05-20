@@ -511,6 +511,11 @@ body::-webkit-scrollbar-thumb {
         width: 100vw;
     }
 
+    .logo{
+        height: 150px;
+        margin-left: -10px;
+    }
+
     .show-menu-btn, .hide-menu-btn{
         display: block;
         transition: 1s;
@@ -560,6 +565,13 @@ body::-webkit-scrollbar-thumb {
         max-width: 100%;
     }
 
+    .container{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .hooks{
         display: none;
     }
@@ -572,39 +584,63 @@ body::-webkit-scrollbar-thumb {
         left: 0;
     }
 
-    .container{
-        flex-direction: column;
-    }
 
     .towlogo{
-        margin-top: 80px;
+        margin-top: 20px;
         max-width: 100%;
         
         
     }
 
     .towcar{
-        height: 400px;
+        height: 300px;
         position: relative;
-        bottom: -50px;
-        
+        bottom: 40px;
+        right: 30px;
     }
     
     .firsttow{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 100px;
-        position: static;
-   
-        transition: .5s;
-        animation: towtow 3s infinite;
+        font-size: 90px;
+        position: relative;
+        top: -183px;
+        left: -63px;
+        
     }
     
     .secondtow{
         font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 100px;
-        position: static;
+        font-size: 90px;
         color: #FF395A;
-       
-        animation: towtow 3s 1.5s infinite;
+        top: -97px;
+        left: -170px;
+        
+    }
+
+    .towtxt{
+        width: 95%;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+    
+    
+    .towtxt p{
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        transition: .5s;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .p2{
+        font-size: 55px;
+    }
+
+    .p3{
+        font-size: 30px;
     }
 }
