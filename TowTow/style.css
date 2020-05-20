@@ -572,12 +572,11 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
     }
 
-    .hooks{
-        display: none;
-    }
+    
 
     .hookimg{
-        display: none;
+        top: 75%;
+        max-height: 350px;
     }
 
     #chk:checked ~ .menu{
@@ -603,7 +602,7 @@ body::-webkit-scrollbar-thumb {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 90px;
         position: relative;
-        top: -183px;
+        top: -178px;
         left: -63px;
         
     }
@@ -613,15 +612,20 @@ body::-webkit-scrollbar-thumb {
         font-size: 90px;
         color: #FF395A;
         top: -97px;
-        left: -170px;
+        left: -175px;
         
     }
+
+    .hooks{
+        height: 130%;
+    }
+
 
     .towtxt{
         width: 95%;
         font-size: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         
     }
     
