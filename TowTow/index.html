@@ -11,21 +11,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body id="start">
         <div class="header">
             <img class="logo" src="./img/construction.png">
-            <i class="fab fa-facebook"></i>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=2085474541508439&ref=br_rs">
+                <i class="fab fa-facebook"></i></a>
             <input type="checkbox" id="chk">
             <label for="chk" class="show-menu-btn">
             <i class="fas fa-bars"></i>
             </label>
 
             <ul class="menu">
-                <a href="#">Start</a>
-                <a href="#">Nasz cel</a>
-                <a href="#">Dołącz</a>
-                <a href="#">Grupa Fb</a>
-                <a href="#">Fanpage</a>
+                <a href="#start">Start</a>
+                <a href="#ourgoal">Nasz cel</a>
+                <a href="#join">Dołącz</a>
+                <a href="#admin">Administratorzy</a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=2085474541508439&ref=br_rs">
+                    Grupa Fb</a>
+                <a target="_blank" href="https://www.facebook.com/TowTow-295692904390825/?eid=ARD5AVqqR79BTyNdpJ1rq9BJWm77AG37xoVvcsSbcFVwTb23GD4zxzchCmoeI-axBhm5sftLORyRhVki">
+                    Fanpage</a>
                 <label for="chk" class="hide-menu-btn">
                 <i class="far fa-times-circle"></i>
                 </label>
@@ -61,7 +65,7 @@
 
 
         
-        <div class="servicesection">
+        <div class="servicesection" id="ourgoal"> 
             
             <div class="servicebox">
                 <div class="serviceicon">
@@ -96,7 +100,7 @@
 
         </div>
 
-        <div class="lastcontainer">
+        <div class="lastcontainer" id="join">
             <div class="redtow">
                 <img class="towbig" src="./img/towbig2.jpg">
             </div>
@@ -110,22 +114,25 @@
 
         </div>
 
-        <div class="footer">
+        <div class="footer" id="admin">
             <div class="admin">
                 <p class="admins">Administratorzy grupy:</p>
                 <div class="kamilone">
                     <img src="./img/facebook.png" class="kamilfb">
-                <p class="kamil">Kamil Głuchaczka</p>
+                <a class="kamil" target="_blank" href="https://www.facebook.com/profile.php?id=100001095180250&ref=br_rs">
+                    Kamil Głuchaczka</a>
                 </div>
                 <div class="kamiltwo">  
                 <img src="./img/facebook.png" class="kamil2fb">
-                <p class="kamil2">Kamil Czubak</p>
+                <a class="kamil2" target="_blank" href="https://www.facebook.com/kamil.czubak.56">
+                    Kamil Czubak</a>
                 </div>
             </div>
             <div class="rights">
                 <p class="reserved">copyright ©. all right reserved.</p>
-                <p class="author">Designed&Created by 
-                    <span class="grzywa">Grzywa</span></p>
+                <p class="author">Designed&Coded by 
+                    <a class="grzywa" target="_blank" href="https://www.facebook.com/tomasz.grzywaczewski.1">
+                        Grzywa</a></p>
             </div>
         </div>
         
