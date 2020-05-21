@@ -3,6 +3,8 @@
     padding: 0;
     font-family: 'Balsamiq Sans', cursive;
     scroll-behavior: smooth;
+    user-select: none;
+    height: none;
 }
 
 body::-webkit-scrollbar {
@@ -90,9 +92,8 @@ body::-webkit-scrollbar-thumb {
     line-height: 70px;
 }
 
-.show-menu-btn:hover, .hide-menu-btn:hover{
+.show-menu-btn:hover, .show-menu-btn:active, .hide-menu-btn:hover{
     color: #FF395A;
-    
 }
 
 .fa-facebook:hover{
@@ -106,9 +107,6 @@ body::-webkit-scrollbar-thumb {
     z-index: -1111;
 }
 
-#chk:focus{
-    background-color: none;
-}
 
 .container{
     width: 100%;
@@ -523,6 +521,12 @@ body::-webkit-scrollbar-thumb {
     .show-menu-btn, .hide-menu-btn{
         display: block;
         transition: 1s;
+        
+    }
+
+    .fa-bars::selection{
+        background: #FFD829;
+        color: #FFD829;
     }
 
     .show-menu-btn:hover{
@@ -540,6 +544,10 @@ body::-webkit-scrollbar-thumb {
 
     .show-menu-btn{
         margin-right: 30px;
+    }
+
+    #chk:checked ~ .menu{
+        left: 0;
     }
 
     .menu{
@@ -582,11 +590,6 @@ body::-webkit-scrollbar-thumb {
         top: 75%;
         max-height: 350px;
     }
-
-    #chk:checked ~ .menu{
-        left: 0;
-    }
-
 
     .towlogo{
         margin-top: 20px;
