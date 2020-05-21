@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 70px;
 }
 
-.show-menu-btn:hover, .show-menu-btn:active, .hide-menu-btn:hover{
+.show-menu-btn:hover, .hide-menu-btn:hover{
     color: #FF395A;
 }
 
@@ -524,11 +524,6 @@ body::-webkit-scrollbar-thumb {
         
     }
 
-    .fa-bars::selection{
-        background: #FFD829;
-        color: #FFD829;
-    }
-
     .show-menu-btn:hover{
         transform: rotate(360deg);
     }
@@ -588,7 +583,7 @@ body::-webkit-scrollbar-thumb {
 
     .hookimg{
         top: 75%;
-        max-height: 350px;
+        max-height: 300px;
     }
 
     .towlogo{
@@ -623,7 +618,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .hooks{
-        height: 130%;
+        display: none;
     }
 
 
@@ -653,4 +648,89 @@ body::-webkit-scrollbar-thumb {
     .p3{
         font-size: 30px;
     }
+
+    .servicesection{
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .servicesection img{
+        max-width: 100%;
+        max-height: 150px;
+    }
+  
+    .serviceicon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+    }
+  
+    
+  
+    .servicebox{
+        max-width: 90%;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+  
+    .servicetxt{
+     font-size: 30px;
+     min-height: 100px;
+  }
+
+  .lastcontainer{
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.redtow{
+    width: 100%;    
+}
+
+.joinus{
+    width: 100%;
+}
+
+.fb{
+    max-height: 150px;
+}
+
+.pinktruck{
+    position: relative;
+    right: 185px;
+    top: 6px;
+}
+
+.jointxttwo{
+    position: relative;
+    top: 20px;
+}
+
+.footer{
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.rights{
+    font-size: 20px;
+}
+
+.admins{
+    margin: 8px auto;
+}
+
+.kamilone, .kamiltwo{
+    margin: 8px auto;    
+}
+
+.kamilfb, .kamil2fb{
+    max-width: 30px;
+    color: #FFD829;
+}
+
+.kamilone:hover,.kamiltwo:hover{
+    transform: scale(1);
+}
+
 }
