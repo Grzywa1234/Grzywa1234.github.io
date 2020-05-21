@@ -587,7 +587,7 @@ body::-webkit-scrollbar-thumb {
 
     .menu a{
         display: block;
-        padding: 20px;
+        padding: 10px;
         color: black;
         border: solid 2px black;
         margin: 5px 10px;
