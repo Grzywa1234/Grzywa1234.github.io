@@ -542,7 +542,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #chk:checked ~ .menu{
-        left: 0;
+        transform: translateX(100%);
     }
 
     .menu{
@@ -583,7 +583,7 @@ body::-webkit-scrollbar-thumb {
 
     .hookimg{
         top: 75%;
-        max-height: 300px;
+        max-height: 350px;
     }
 
     .towlogo{
@@ -603,17 +603,17 @@ body::-webkit-scrollbar-thumb {
         font-family: 'Anton', sans-serif;
         font-size: 90px;
         position: relative;
-        top: -178px;
-        left: -63px;
-        
+        top: -182px;
+        left: -58px;
+       
     }
     
     .secondtow{
         font-family: 'Anton', sans-serif;
         font-size: 90px;
         color: #FF395A;
-        top: -97px;
-        left: -175px;
+        top: -92px;
+        left: -160px;
         
     }
 
