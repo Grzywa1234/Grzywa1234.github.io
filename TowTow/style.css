@@ -600,7 +600,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     .firsttow{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
         font-size: 90px;
         position: relative;
         top: -178px;
@@ -609,7 +609,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     .secondtow{
-        font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
         font-size: 90px;
         color: #FF395A;
         top: -97px;
@@ -634,7 +634,7 @@ body::-webkit-scrollbar-thumb {
     
     .towtxt p{
         text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Anton', sans-serif;
         transition: .5s;
         position: relative;
         margin-top: 10px;
@@ -675,6 +675,7 @@ body::-webkit-scrollbar-thumb {
     }
   
     .servicetxt{
+    font-family: 'Anton', sans-serif;
      font-size: 30px;
      min-height: 100px;
   }
@@ -698,13 +699,18 @@ body::-webkit-scrollbar-thumb {
 
 .pinktruck{
     position: relative;
-    right: 185px;
+    right: 165px;
     top: 6px;
+}
+
+.jointxt{
+    font-family: 'Anton', sans-serif;
 }
 
 .jointxttwo{
     position: relative;
     top: 20px;
+    font-family: 'Anton', sans-serif;
 }
 
 .footer{
