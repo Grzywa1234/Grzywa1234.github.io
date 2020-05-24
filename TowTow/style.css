@@ -115,9 +115,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #FFD829;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
-    
-    
+    overflow: hidden;   
 }
 
 .towlogo{
@@ -127,13 +125,12 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     width: 50%;
     position: relative;
-    bottom: -40px;
+    bottom: -90px;
     right: -40px;
     
 }
 
 .towcar{
-    
 }
 
 .firsttow{
@@ -526,6 +523,8 @@ body::-webkit-scrollbar-thumb {
     .menu a{
         font-size: 10px;
     }
+
+
 }
 
 @media screen and (max-width: 900px){
@@ -763,6 +762,56 @@ body::-webkit-scrollbar-thumb {
 
 .kamilone:hover,.kamiltwo:hover{
     transform: scale(1);
+}
+
+}
+
+
+@media screen and (max-width: 360px){
+.hookimg{
+    max-height: 300px;   
+}
+
+.container{
+    padding-top: 110px;
+}
+
+
+.towcar{
+    height: 200px;
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}
+
+.firsttow{
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
+    position: relative;
+    top: -152px;
+    left: -58px;
+   
+}
+
+.secondtow{
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
+    color: #FF395A;
+    top: -61px;
+    left: -160px;
+   
+}
+
+.towtxt{
+    font-size: 25px;
+    margin-top: 40px;    
+}
+
+
+.pinktruck{
+    position: relative;
+    right: 135px;
+    top: 6px;
 }
 
 }
