@@ -773,7 +773,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container{
-    padding-top: 110px;
+    padding-top: 80px;
 }
 
 
@@ -810,7 +810,7 @@ body::-webkit-scrollbar-thumb {
 
 .pinktruck{
     position: relative;
-    right: 135px;
+    right: 145px;
     top: 6px;
 }
 
