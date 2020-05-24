@@ -767,15 +767,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 340px){
 .hookimg{
     max-height: 300px;   
 }
 
 .container{
     padding-top: 80px;
+    height: 130vh;
 }
-
 
 .towcar{
     height: 200px;
