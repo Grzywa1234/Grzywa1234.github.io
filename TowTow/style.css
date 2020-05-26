@@ -562,9 +562,11 @@ body::-webkit-scrollbar-thumb {
         margin-right: 30px;
     }
 
+    /*
     #chk:checked ~ .menu{
         transform: translateX(100%);
     }
+    */
 
     .menu{
         display: flex;
