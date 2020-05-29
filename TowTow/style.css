@@ -161,7 +161,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 80px;
     margin-bottom: 80px;
     
@@ -178,7 +178,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .p2{
-    font-size: 60px;
+    font-size: 100px;
 }
 
 .towpink{
@@ -381,10 +381,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .jointxt{
+    padding-top: 38px;
     margin: 20px auto;
     text-align: center;
     font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     
 }
 
@@ -392,12 +393,14 @@ body::-webkit-scrollbar-thumb {
     margin: 10px auto;
     text-align: center;
     font-family: Impact, fontHaettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-size: 60px;
+    color: black;
+    animation: changecolor 2s 1s infinite;
 }
 
 .pinktruck{
     max-height: 50px;
-    animation: serviceimg 2s 1s infinite;
+    animation: serviceimg 2s infinite;
 }
 
 .footer{
@@ -456,7 +459,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
+@keyframes changecolor{
+    0%{
+        color: black;
+    }
+    50%{
+        color: #FF395A;
+    }
+    100%{
+        color: black;
+    }
+}
 
 @keyframes serviceimg{
     25%{
@@ -522,6 +535,38 @@ body::-webkit-scrollbar-thumb {
 @media screen and (min-width: 900px) and (max-width: 1024px){
     .menu a{
         font-size: 10px;
+    }
+
+    .jointxt{
+        padding-top: 0px;   
+        font-size: 30px;
+    }
+
+    .jointxttwo{
+        font-size: 30px;
+    }
+
+    .fblink{
+        display: flex;
+        max-height: 250px;
+        max-width: 70%;
+        align-items: center;
+    }
+
+    .towtxt{
+        width: 50%;
+        font-size: 40px;
+        
+    }
+    
+    
+    
+    .towtxt p{
+        
+    }
+    
+    .p2{
+        font-size: 60px;
     }
 
 
@@ -615,7 +660,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .towlogo{
-        margin-top: 20px;
+        margin-top: 0;
         max-width: 100%;
         font-family: 'Anton', sans-serif;
     }
@@ -682,6 +727,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .servicesection{
+      padding-top: 50px;
       flex-direction: column;
       min-height: 100vh;
     }
@@ -713,6 +759,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .lastcontainer{
+    padding-top: 50px;
     overflow: hidden;
     flex-direction: column;
 }
@@ -737,12 +784,14 @@ body::-webkit-scrollbar-thumb {
 
 .jointxt{
     font-family: 'Anton', sans-serif;
+    font-size: 30px;
 }
 
 .jointxttwo{
     position: relative;
     top: 20px;
     font-family: 'Anton', sans-serif;
+    font-size: 30px;
 }
 
 .footer{
