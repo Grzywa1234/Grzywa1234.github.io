@@ -174,7 +174,6 @@ body::-webkit-scrollbar-thumb {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition: .5s;
     position: relative;
-    
 }
 
 .p2{
@@ -648,15 +647,16 @@ body::-webkit-scrollbar-thumb {
     }
 
     .container{
-        height: 130vh;
+        padding-top: 80px;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }    
 
     .hookimg{
-        top: 75%;
-        max-height: 350px;
+        top: 60%;
+        max-height: 300px;
     }
 
     .towlogo{
@@ -704,7 +704,6 @@ body::-webkit-scrollbar-thumb {
         font-size: 30px;
         margin-top: 0px;
         margin-bottom: 0px;
-        
     }
     
     
@@ -716,6 +715,7 @@ body::-webkit-scrollbar-thumb {
         position: relative;
         margin-top: 10px;
         margin-bottom: 10px;
+        
     }
     
     .p2{
@@ -759,7 +759,6 @@ body::-webkit-scrollbar-thumb {
   }
 
   .lastcontainer{
-    padding-top: 50px;
     overflow: hidden;
     flex-direction: column;
 }
@@ -783,6 +782,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .jointxt{
+    padding-top: 0;
     font-family: 'Anton', sans-serif;
     font-size: 30px;
 }
